@@ -1,0 +1,159 @@
+/*Custom properties*/
+:root{
+    /*Colors*/
+    --clr-main-blue : #1D70B6;
+    --clr-light-blue :#6C98DF;
+    --clr-dark : #222222;
+    /*Fonts*/
+    --ft-cairo : 'Cairo', sans-serif;
+    --ft-bill : 'Billabong' , sans-serif;
+    --ft-rail : 'Raleway', sans-serif;
+
+    --ft-h1-size : 2.188rem;
+}
+
+/*Main reset*/
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+    font-family: var(--ft-cairo);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h1{
+    font-size: var(--ft-h1-size);
+}
+
+/*Utility classes*/
+.container{
+    margin-inline: auto;
+    width: min(90% , 70rem);
+    padding-inline: 1em;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.grid{
+    display: grid;
+}
+.text-center{
+    align-items: center;
+}
+
+
+/*Color background*/
+
+.bg-main{
+    background-color: var(--clr-main-blue);
+}
+.bg-light{
+    background-color: var(--clr-light-blue);
+}
+.bg-dark{
+    background-color: var(--clr-dark);
+}
+.bg-white{
+    background-color: white;
+}
+/*Color text*/
+.text-blue{
+    color: var(--clr-main-blue);
+}
+.text-light{
+    color: var(--clr-light-blue);
+}
+.text-dark{
+    color: var(--clr-dark);
+}
+.text-black{
+    color: black;
+}
+.text-white{
+    color: white;
+}
+
+.logo{
+    width: 80px;
+    height: 100%;
+}
+
+.identity , .links{
+    flex-basis: 100%;
+}
+
+.identity{
+    display: flex;
+    align-items: center;
+    gap: 1em;    
+}
+.identity h1{
+    font-family: var(--ft-bill);
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: auto;
+}
+
+.login-btn{
+    padding: 0.8em 1em;
+    border-radius: 0.5em;
+}
+
+
+
+
+
+
+
+@media (max-width:665px){
+    header .flex{
+        flex-direction: column;
+    }
+    header .identity{
+        justify-content: center;
+    }
+    header{
+        padding-bottom: 1em ;
+    }
+    header .identity h1{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:383px){
+    header .flex{
+        flex-direction: column;
+    }
+    header .identity{
+        justify-content: center;
+    }
+    header{
+        padding-bottom: 0.8em ;
+    }
+    header .identity img{
+        display: none;
+    }
+    header .identity h1{
+        font-size: 1.5rem;
+    }
+    header .links a{
+        font-size: 0.7rem;
+    }
+    header .links .login-btn{
+        padding: 0.4em 0.6em;
+    }
+}
+
