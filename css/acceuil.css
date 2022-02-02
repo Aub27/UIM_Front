@@ -1,4 +1,10 @@
 /*Custom properties*/
+
+@font-face{
+    font-family: var(--ft-bill);
+    src: url('../fonts/Billabong.ttf');
+}
+
 :root{
     /*Colors*/
     --clr-main-blue : #001f3f;
@@ -11,6 +17,8 @@
     --ft-rail : 'Raleway', sans-serif;
     --ft-h1-size : 2.188rem;
 }
+
+
 
 /*Main reset*/
 *,
