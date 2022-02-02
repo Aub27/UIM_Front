@@ -2,7 +2,7 @@
 
 @font-face{
     font-family: bill;
-    src: url('../fonts/Billabong.ttf');
+    src: url(../fonts/Billabong.ttf);
 }
 
 :root{
