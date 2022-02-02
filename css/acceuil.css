@@ -1,7 +1,7 @@
 /*Custom properties*/
 
 @font-face{
-    font-family: var(--ft-bill);
+    font-family: bill;
     src: url('../fonts/Billabong.ttf');
 }
 
@@ -127,7 +127,7 @@ header{
     gap: 1em;    
 }
 .identity h1{
-    font-family: var(--ft-bill);
+    font-family: bill;
 }
 
 .links{
