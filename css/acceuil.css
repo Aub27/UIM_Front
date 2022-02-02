@@ -238,7 +238,7 @@ align-items: center;
         padding-bottom: 0.8em ;
     }
     header .identity img{
-        display: none;
+        width: 40px;
     }
     header .identity h1{
         font-size: 1.5rem;
@@ -249,8 +249,7 @@ align-items: center;
     header .links .login-btn{
         padding: 0.4em 0.6em;
     }
-
-    img{
+    .pic{
         display: none;
     }
     section .flex{
