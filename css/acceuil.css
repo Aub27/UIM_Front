@@ -13,7 +13,7 @@
     --clr-dark : #222222;
     /*Fonts*/
     --ft-cairo : 'Cairo', sans-serif;
-    --ft-bill : 'Billabong' , sans-serif;
+    --ft-bill : bill;
     --ft-rail : 'Raleway', sans-serif;
     --ft-h1-size : 2.188rem;
 }
