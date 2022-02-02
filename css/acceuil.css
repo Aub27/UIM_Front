@@ -2,7 +2,8 @@
 :root{
     /*Colors*/
     --clr-main-blue : #001f3f;
-    --clr-light-blue :#6C98DF;
+    --clr-light-blue : 210, 100%, 12%;
+
     --clr-dark : #222222;
     /*Fonts*/
     --ft-cairo : 'Cairo', sans-serif;
@@ -66,7 +67,7 @@ h1{
     background-color: var(--clr-main-blue);
 }
 .bg-light{
-    background-color: var(--clr-light-blue);
+    background-color:  hsl(210, 100%, 1%);
 }
 .bg-dark{
     background-color: var(--clr-dark);
@@ -166,9 +167,10 @@ section article{
 }
 section .flex img{
     width: 50%;
+    max-height: 100%;
 }
 section .flex article{
-    flex-basis: 40%;
+    flex-basis: 50%;
 
 }
 article h1{
@@ -180,6 +182,10 @@ article h1{
 
 footer{
     grid-area: f;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*Media queries*/
 
