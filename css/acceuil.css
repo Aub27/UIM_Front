@@ -148,6 +148,9 @@ section{
     width: 100%;
     grid-area: s;
 }
+section .container{
+    height: 100%;
+}
 section .flex{
     height: 100%;
 }
@@ -161,8 +164,10 @@ section .pic{
 section article{
     display: flex;
     flex-direction: column;
+    gap: 1em;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
 }
 section .flex img{
@@ -186,6 +191,10 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+footer .container{
+justify-content: center;
+align-items: center;
 }
 /*Media queries*/
 
@@ -231,6 +240,14 @@ footer{
     }
     header .links .login-btn{
         padding: 0.4em 0.6em;
+    }
+
+    img{
+        display: none;
+    }
+    section .flex{
+        align-items: center;
+        justify-content: center;
     }
 }
 
