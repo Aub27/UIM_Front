@@ -144,9 +144,12 @@ header{
 .links a:hover{
     box-shadow: 0 2px 0 0 white;
 }
+header .flex{
+    align-items: center;
+}
 
 .login-btn{
-    padding: 0.8em 1em;
+    padding: 0.7em 1em;
     border-radius: 0.5em;
 }
 
@@ -165,7 +168,7 @@ section .flex{
 section .pic{
     background-image: url('../images/stages.jpg');
     background-size: cover;
-    height: 450px;
+    height: 430px;
     width: 90%;
     align-self: center;
 }
@@ -177,6 +180,34 @@ section article{
     align-items: center;
     text-align: center;
 
+}
+.ap .apropos{
+    text-align: center;
+}
+.ap{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+.ap .container{
+    justify-content: center;
+    align-items: center;
+}
+.ap article{
+    border: 1px solid #2222;
+    border-radius: 1em;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    height: 80%;
+    padding-inline:1em ;
+    line-height: 1.5rem;
+    min-width: 50%;
+}
+.ap article img{
+    height: 20%;
+}
+.ap .flex{
+    justify-content: center;
 }
 section .flex img{
     width: 50%;
@@ -202,7 +233,7 @@ footer{
 }
 footer .container{
 align-items: center;
-gap: 1em;
+gap: 0.4em;
 }
 
 footer .container p,.contacts{
