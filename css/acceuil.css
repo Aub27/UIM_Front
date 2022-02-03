@@ -201,8 +201,18 @@ footer{
     align-items: center;
 }
 footer .container{
-justify-content: center;
 align-items: center;
+gap: 1em;
+}
+
+footer .container p,.contacts{
+    flex-basis: 100%;
+}
+footer .contacts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
 }
 /*Media queries*/
 
@@ -224,6 +234,13 @@ align-items: center;
     }
     section{
         font-size: smaller;
+    }
+    .pic{
+        width: 60% !important;
+        height: 50% !important;
+    }
+    footer{
+        font-size: 0.750rem;
     }
 }
 
@@ -247,7 +264,7 @@ align-items: center;
         font-size: 0.7rem;
     }
     header .links .login-btn{
-        padding: 0.4em 0.6em;
+        padding: 0.7em;
     }
     .pic{
         display: none;
@@ -255,6 +272,9 @@ align-items: center;
     section .flex{
         align-items: center;
         justify-content: center;
+    }
+    footer{
+        font-size: 0.720rem;
     }
 }
 
