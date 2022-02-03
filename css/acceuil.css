@@ -185,23 +185,24 @@ section article{
     text-align: center;
 }
 .ap{
-    display: grid;
-    place-items: center;
     width: 100%;
     height: 100%;
+    grid-area: s;
 }
 .ap .container{
     justify-content: center;
     align-items: center;
+    width: 80vw;
 }
 .ap article{
     border: 1px solid #2222;
     border-radius: 1em;
     box-shadow: 1px 1px 1px 1px #ccc;
-    height: 80%;
+    height: 90%;
     padding-inline:1em ;
     line-height: 1.5rem;
-    min-width: 50%;
+    min-width: 90%;
+    margin-block: 1em;
 }
 .ap article img{
     height: 20%;
@@ -287,12 +288,27 @@ footer .contacts{
 }
 /*Media queries*/
 
-@media (max-width:665px){
+
+@media (max-width:910px){
+    header,section,footer{
+        font-size: smaller;
+        padding-block: 1em;
+    }
+    h1{
+        font-size: 300;
+    }
     .b-container{
-        grid-template-rows: 20% 60% 20%;
+        grid-template-rows: 20% 65% 15%;
+    }
+    .links{
+        width: 100%;
+    }
+    .logo-inside{
+        width: 20%;
     }
     header .flex{
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
     header .identity{
         justify-content: center;
@@ -313,9 +329,52 @@ footer .contacts{
     footer{
         font-size: 0.750rem;
     }
+    .ap article{
+        font-size: smaller;
+        width: 100%;
+    }
+}
+
+@media (max-width:665px){
+    .b-container{
+        grid-template-rows: 20% 60% 20%;
+    }
+    header .flex{
+        flex-direction: column;
+    }
+    header .identity{
+        justify-content: center;
+        flex-grow:0;
+    }
+    header{
+        padding-block: 1em ;
+    }
+    header .identity h1{
+        font-size: 1.5rem;
+    }
+    header .identity img{
+        width: 30%;
+    }
+    section{
+        font-size: smaller;
+    }
+    .pic{
+        width: 60% !important;
+        height: 50% !important;
+    }
+    footer{
+        font-size: 0.750rem;
+    }
+    .ap article{
+        font-size: smaller;
+        width: 100%;
+    }
 }
 
 @media (max-width:383px){
+    .b-container{
+        grid-template-rows: 20% 70% 10%;
+    }
     header .flex{
         flex-direction: column;
     }
@@ -345,7 +404,11 @@ footer .contacts{
         justify-content: center;
     }
     footer{
-        font-size: 0.720rem;
+        font-size: 0.710rem;
+    }
+    .ap article{
+        height: 100%;
+        overflow: auto;
     }
 }
 
