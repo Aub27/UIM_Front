@@ -568,8 +568,10 @@ footer .contacts{
     }
     .reg-section form input[type=text],input[type=tel],input[type=email],input[type=password]{
         border-top: 1px solid #001f3f;
-        width: 95% !important;
         padding: 0.5em 0.5em !important;
+    }
+    .reg-section .container{
+        width: 100vw;
     }
 }
 
