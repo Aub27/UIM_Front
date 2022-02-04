@@ -194,6 +194,14 @@ section article{
     align-items: center;
     width: 80vw;
 }
+.apropos{
+    width: min(90%,50rem);
+    padding-inline: 1em;
+    margin-inline: 1em;
+    overflow: auto;
+
+
+}
 .ap article{
     border: 1px solid #2222;
     border-radius: 1em;
@@ -237,15 +245,19 @@ section article{
     margin: 0;
 }
 .login-section .container form input[type=email],input[type=password]{
-    border-radius: 1em;
-    border: 1px solid hsl(210, 100%, 30%);
+    border-radius: 0.6em;
+    border-bottom: transparent;
+    border-top: 1px solid hsl(210, 100%, 30%);
+    border-left: transparent;
+    border-right: transparent;
+    outline:none ;
     padding-inline: 1em;
     width: 80%;
 }
 .login-section .container form input[type=submit]{
     width: 30%;
-    padding-block: 0.2em 0.4em;
-    border-radius: 1em;
+    padding-block: 0.3em 0.4em;
+    border-radius: 0.5em;
     border: 1px solid #001f3f;
     background-color: var(--clr-main-blue);
     color: white;
@@ -339,6 +351,9 @@ footer .contacts{
         font-size: smaller;
         width: 100%;
     }
+    .login-section form{
+        gap: 2em;
+    };
 }
 
 @media (max-width:665px){
@@ -381,7 +396,12 @@ footer .contacts{
     .b-container{
         grid-template-rows: 20% 70% 10%;
     }
-    
+    .ap .container {
+        width: 100vw ;
+    }
+    .ap article p{
+        width: 100%;
+    }
     header .flex{
         flex-direction: column;
     }
@@ -415,6 +435,7 @@ footer .contacts{
     }
     .ap article{
         height: 100%;
+        width: 100%;
         overflow: auto;
     }
     form h1{
