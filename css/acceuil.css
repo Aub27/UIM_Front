@@ -416,5 +416,16 @@ footer .contacts{
         height: 100%;
         overflow: auto;
     }
+    form h1{
+        text-align: center;
+    }
+    input[type=email],input[type=password]{
+        padding-block: 0.4em;
+    }
+    input[type=submit]{
+        padding: 0.5em;
+        font-size: smaller;
+        margin-bottom: 1.4em;
+    }
 }
 
