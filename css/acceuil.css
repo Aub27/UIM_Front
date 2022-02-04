@@ -381,6 +381,7 @@ footer .contacts{
     .b-container{
         grid-template-rows: 20% 70% 10%;
     }
+    
     header .flex{
         flex-direction: column;
     }
@@ -427,6 +428,9 @@ footer .contacts{
         font-size: smaller;
         margin-bottom: 1.4em;
         width: 50% !important;
+    }
+    form{
+        overflow: auto;
     }
 }
 
