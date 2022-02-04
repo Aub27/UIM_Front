@@ -251,12 +251,12 @@ section article{
 .login-section .container form input[type=email],input[type=password]{
     border-radius: 0.6em;
     border-bottom: transparent;
-    border-top: 1px solid hsl(210, 100%, 30%);
+    border-top: 1px solid hsl(210, 100%, 30%) !important;
     border-left: transparent;
     border-right: transparent;
     outline:none ;
     padding-inline: 1em;
-    width: 80%;
+    width: 80% !important;
 }
 .login-section .container form input[type=submit]{
     width: 30%;
@@ -422,13 +422,18 @@ footer .contacts{
         padding-block: 3em;
         justify-content: center;
         overflow-y: auto;
+    
     }
     .reg-section form{
         width: 95%;
+        box-shadow: none;
+        border: none;
     }
     .reg-section form input[type=text],input[type=tel],input[type=email],input[type=password]{
         width: 95%;
-        padding: 1em 0.5em;
+        width: 95% !important;
+        padding: 1em 0.5em !important;
+
     }
     .reg-section .reg-button{
         padding: 0.6em 0.5em;
@@ -476,13 +481,17 @@ footer .contacts{
         padding-block: 2em;
         justify-content: center;
         overflow-y: auto;
+        box-shadow: none;
     }
     .reg-section form{
         width: 95%;
+        box-shadow: none;
+        border: none;
     }
     .reg-section form input[type=text],input[type=tel],input[type=email],input[type=password]{
         width: 95%;
-        padding: 0.5em 0.5em;
+        width: 95% !important;
+        padding: 0.5em 0.5em !important;
     }
 }
 
@@ -554,10 +563,13 @@ footer .contacts{
     }
     .reg-section form{
         width: 95%;
+        box-shadow: none;
+        border: none;
     }
     .reg-section form input[type=text],input[type=tel],input[type=email],input[type=password]{
-        width: 95%;
-        padding: 0.5em 0.5em;
+        border-top: 1px solid #001f3f;
+        width: 95% !important;
+        padding: 0.5em 0.5em !important;
     }
 }
 
