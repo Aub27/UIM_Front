@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UIM :: Acceuil</title>
+    <title>UIM :: Se Connecter</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/acceuil.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,24 +24,40 @@
                     <h1>Internships Management</h1>
                 </div>
                 <div class="links">
-                    <a  href="inscription.html">S'inscrire</a>
+                    <a  href="index.html">Acceuil</a>
                     <a href="apropos.html">A Propos</a>
                     <a href="login.html" class="login-btn bg-white text-dark">Se Connecter</a>
                 </div>
             </div>
         </header>
-        <section>
-            <div class="container">
-                <div class="flex">
-                    <img src="images/students_09.jpg" alt="students picture" class="pic">
-                    <article class="text-dark">
-                        <img src="images/logo/logo.svg" alt="app-logo" class="logo-inside">
-                        <h1 class="ft-insta text-dark">Internships Management</h1>
-                        <p>Connectez Vous Et Gérez Vos Stages PFE...</p>
-                        <a href="login.html" class="login-btn bg-main text-white">Se Connecter</a>
-                    </article>
+        <section class="reg-section">
+        <div class=" container flex-col">
+            <h1>Internships Management</h1>
+            <form action="" class="flex">
+                <div class="left flex-col">
+                    <label for="nom">Nom (Obligatoire)</label>
+                    <input type="text" name="nom" id="nom" placeholder="Entrez votre nom">
+                    <label for="prenom">Prénom (Obligatoire)</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Entrez votre prénom">
+                    <label for="tel">Téléphone (Obligatoire)</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Entrez votre numéro téléphone">
+                    <label for="sexe">Vous êtes (Obligatoire) </label>
+                    <select name="sexe" id="sexe-selection">
+                        <option value="Mr">Mr</option>
+                        <option value="Mme">Mme</option>
+                    </select>
                 </div>
-            </div>
+                <div class="right flex-col">
+                    <label for="username">Nom d'utilisateur (Obligatoire)</label>
+                    <input type="email" name="username" id="username" placeholder="Entrez votre nom d'utilisateur">
+                    <label for="pass">Mot de passe (Obligatoire)</label>
+                    <input type="password" name="pass" id="pass" placeholder="Entrez votre mot de passe">
+                    <input type="submit" value="S'inscrire" class="reg-button">
+                    <span>Déja inscrit ?<a href="login.html">Se Connecter</a></span>
+                    <span>Plus d'informations <a href="apropos.html">Infos</a></span>
+                </div>
+            </form>
+        </div>
         </section>
         <footer class="bg-main text-white">
             <div class="container flex">
