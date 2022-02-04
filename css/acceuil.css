@@ -254,7 +254,6 @@ section article{
     margin: 0;
 }
 .login-section .container form input[type=email],input[type=password]{
-    border-radius: 0.6em;
     border-bottom: transparent;
     border-top: 1px solid var(--clr-main-blue) !important;
     border-left: transparent;
@@ -309,7 +308,6 @@ article h1{
 .reg-section form input[type=text],input[type=tel],input[type=email],input[type=password]{
     width: 90%;
     border-top: 1px solid var(--clr-main-blue);
-    border-radius: 0.5em;
     border-left: transparent;
     border-right: transparent;
     border-bottom: transparent;
@@ -570,7 +568,6 @@ footer .contacts{
     }
     input[type=email],input[type=password]{
         padding-block: 0.4em;
-        width: 80% !important;
     }
     input[type=submit]{
         padding: 0.6em !important;
@@ -589,9 +586,13 @@ footer .contacts{
     .reg-section form input[type=text],input[type=tel],input[type=email],input[type=password]{
         border-top: 1px solid #001f3f;
         padding: 0.5em 0.5em !important;
+        width: 90% !important;
     }
     .reg-section .container{
         width: 100vw;
+    }
+    .reg-section .left,.right{
+        padding-inline: unset;
     }
 }
 
