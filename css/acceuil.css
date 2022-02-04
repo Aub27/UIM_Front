@@ -112,7 +112,7 @@ header{
     border-bottom: 1px solid white;
 }
 .logo{
-    width: 80px;
+    width: 60px;
     height: 100%;
 }
 
@@ -290,6 +290,9 @@ footer .contacts{
 
 
 @media (max-width:910px){
+    .login-section .container form{
+        width: 90%;
+    }
     header,section,footer{
         font-size: smaller;
         padding-block: 1em;
@@ -305,6 +308,9 @@ footer .contacts{
     }
     .logo-inside{
         width: 20%;
+    }
+    .login-section .container{
+        width: 90% ;
     }
     header .flex{
         flex-direction: row;
