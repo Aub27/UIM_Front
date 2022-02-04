@@ -158,6 +158,9 @@ header .flex{
     border-radius: 0.5em;
 }
 
+input:not([type=sumbit]){
+    border-top:transparent ;
+}
 /*Section */
 
 section{
@@ -588,7 +591,6 @@ footer .contacts{
         border: none;
     }
     .reg-section form input[type=text],input[type=tel],input[type=email],input[type=password]{
-        border-top: 1px solid #001f3f;
         padding: 0.5em 0.5em !important;
         width: 90% !important;
     }
