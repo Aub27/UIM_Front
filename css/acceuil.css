@@ -25,6 +25,7 @@
 *::after,
 *::before{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -547,6 +548,7 @@ footer .contacts{
         height: 100%;
         width: 100%;
         overflow: auto;
+        scroll-behavior: smooth;
     }
     .ap .logo-inside{
         width:25%;
