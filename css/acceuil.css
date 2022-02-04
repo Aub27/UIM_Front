@@ -423,6 +423,16 @@ footer .contacts{
         justify-content: center;
         overflow-y: auto;
     }
+    .reg-section form{
+        width: 95%;
+    }
+    .reg-section form input[type=text],input[type=tel],input[type=email],input[type=password]{
+        width: 95%;
+        padding: 1em 0.5em;
+    }
+    .reg-section .reg-button{
+        padding: 0.6em 0.5em;
+    }
 }
 
 @media (max-width:665px){
@@ -466,6 +476,13 @@ footer .contacts{
         padding-block: 2em;
         justify-content: center;
         overflow-y: auto;
+    }
+    .reg-section form{
+        width: 95%;
+    }
+    .reg-section form input[type=text],input[type=tel],input[type=email],input[type=password]{
+        width: 95%;
+        padding: 0.5em 0.5em;
     }
 }
 
@@ -515,6 +532,11 @@ footer .contacts{
         width: 100%;
         overflow: auto;
     }
+    .ap .logo-inside{
+        width:25%;
+        height: 10%;
+        margin-block: unset;
+    }
     form h1{
         text-align: center;
     }
@@ -529,6 +551,13 @@ footer .contacts{
     }
     form{
         overflow: auto;
+    }
+    .reg-section form{
+        width: 95%;
+    }
+    .reg-section form input[type=text],input[type=tel],input[type=email],input[type=password]{
+        width: 95%;
+        padding: 0.5em 0.5em;
     }
 }
 
