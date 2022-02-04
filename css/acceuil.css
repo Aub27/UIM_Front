@@ -240,6 +240,10 @@ section article{
     align-items: center;
     gap: 0.8em;
 }
+.reg-con,.reset-ps,.conn-reg,.info-reg{
+    color: var(--clr-main-blue);
+    font-weight: 700;
+}
 .login-section .container form img{
     width: 20%;
     height: 20%;
@@ -474,6 +478,9 @@ footer .contacts{
         font-size: smaller;
         width: 100%;
     }
+    .login-section form input[type=email],input[type=password]{
+        width: 80% !important;
+    }
     .reg-section form{
         height: 100%;
         overflow: auto;
@@ -551,6 +558,7 @@ footer .contacts{
     }
     input[type=email],input[type=password]{
         padding-block: 0.4em;
+        width: 80% !important;
     }
     input[type=submit]{
         padding: 0.6em !important;
