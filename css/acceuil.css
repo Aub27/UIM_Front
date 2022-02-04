@@ -254,8 +254,8 @@ section article{
     margin: 0;
 }
 .login-section .container form input[type=email],input[type=password]{
-    border-bottom: transparent;
-    border-top: 1px solid var(--clr-main-blue) !important;
+    border-top: transparent;
+    border-bottom: 1px solid var(--clr-main-blue) !important;
     border-left: transparent;
     border-right: transparent;
     outline:none ;
@@ -280,6 +280,9 @@ section .flex article{
 }
 article h1{
     margin: 0;
+}
+.login-section form label,input[type=email],input[type=password]{
+    align-self: flex-start;
 }
 .logo-inside{
     width: 50%;
@@ -307,10 +310,10 @@ article h1{
 }
 .reg-section form input[type=text],input[type=tel],input[type=email],input[type=password]{
     width: 90%;
-    border-top: 1px solid var(--clr-main-blue);
+    border-bottom: 1px solid var(--clr-main-blue);
     border-left: transparent;
     border-right: transparent;
-    border-bottom: transparent;
+    border-top: transparent;
     padding-inline: 0.5em;
 }
 .reg-section .reg-button{
@@ -577,6 +580,7 @@ footer .contacts{
     }
     form{
         overflow: auto;
+        width: 100%;
     }
     .reg-section form{
         width: 95%;
@@ -594,5 +598,9 @@ footer .contacts{
     .reg-section .left,.right{
         padding-inline: unset;
     }
+    .login-section .container{
+        width: 100%;
+    }
+   
 }
 
