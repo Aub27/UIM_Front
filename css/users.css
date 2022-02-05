@@ -23,15 +23,18 @@
   overflow: auto;
   height: auto;
 }
-.cor-section aside a:not(:last-child) {
+.cor-section aside .item:not(:last-child) {
   border-bottom: 2px solid var(--clr-main-blue);
 }
-.cor-section aside a {
+.cor-section aside .item {
   padding: 1em;
-  transition: 0.3s;
+  width: 100%;
+}
+.cor-section aside .item a {
+  transition: 0.4s;
 }
 
-.cor-section aside > a:hover {
+.cor-section aside a:hover {
   padding-left: 1em;
 }
 
