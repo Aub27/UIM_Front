@@ -139,7 +139,7 @@
     border-radius: unset;
     border: unset;
   }
-  .cor-section aside > a {
+  .cor-section aside > .item {
     border: unset !important;
     padding-block: 0.2em;
   }
