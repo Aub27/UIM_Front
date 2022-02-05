@@ -131,4 +131,13 @@
     gap: 1em;
     height: 50%;
   }
+  section {
+    padding-top: 0;
+  }
+  .user-header .links i {
+    font-size: 1rem !important;
+  }
+  .side-bar-not {
+    display: none;
+  }
 }
