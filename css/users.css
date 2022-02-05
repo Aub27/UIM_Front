@@ -67,6 +67,7 @@
   border-radius: 1em;
   border: 1px solid #332;
   transition: 0.3s;
+  opacity: 96%;
 }
 .cor-section .content .cards .card::after {
   position: absolute;
