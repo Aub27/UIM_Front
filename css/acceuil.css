@@ -46,7 +46,7 @@ h1 {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 15% 77% 8%;
+  grid-template-rows: 14% 77% 9%;
   grid-template-areas:
     "h h h h h h h h h h h h"
     "s s s s s s s s s s s s"
@@ -102,6 +102,15 @@ h1 {
 }
 .text-white {
   color: white;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-semi-bold {
+  font-weight: 600;
+}
+.font-light {
+  font-weight: 300;
 }
 
 .ft-insta {
@@ -354,6 +363,7 @@ input[type="password"] {
 
 footer {
   grid-area: f;
+  height: 100%;
   border-top: 1px solid white;
   display: flex;
   justify-content: center;
@@ -361,7 +371,7 @@ footer {
 }
 footer .container {
   align-items: center;
-  gap: 0.4em;
+  gap: 0.2em;
 }
 
 footer .container p,

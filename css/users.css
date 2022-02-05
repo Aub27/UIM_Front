@@ -6,6 +6,12 @@
   background-repeat: no-repeat;
 }
 
+.card-design {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "picture info status";
+}
+
 .cor-section .user-container {
   height: 100%;
   display: grid;
@@ -24,7 +30,7 @@
   width: 80%;
   opacity: 80%;
   overflow: auto;
-  height: auto;
+  height: fit-content;
 }
 .cor-section aside .item:not(:last-child) {
   border-bottom: 2px solid var(--clr-main-blue);
@@ -54,15 +60,15 @@
 .cor-section .content .cards {
   grid-template-columns: repeat(3, 3fr);
   gap: 0.5em;
-  height: 30%;
+  height: 100%;
 }
 .cor-section .content .cards .card {
   background-color: white;
   position: relative;
   padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "picture info";
   gap: 0.5em;
   box-shadow: 2px 2px 5px 1px #222;
   border-radius: 1em;
@@ -86,23 +92,44 @@
   right: 12%;
   font-size: small;
 }
+.cor-section .content .cards .card .what {
+  grid-area: picture;
+  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.cor-section .content .cards .card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  grid-area: info;
+  grid-row-start: 2;
+}
+.cor-section .content .cards .card .name-student {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  place-self: center;
+}
 .cor-section .content .cards .card .profil-container img:first-child {
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   margin: 0;
 }
 .cor-section .content .cards .card .profil-container img:last-child {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   margin: 0;
   position: absolute;
-  right: -15px;
-  bottom: 0;
+  right: 5px;
+  top: 40%;
 }
 .cor-section .content .cards .card .profil-container {
   position: relative;
+  grid-area: picture;
 }
 .cor-section h4 {
   line-height: 1rem;
@@ -159,6 +186,23 @@
   }
   section {
     padding-top: 0;
+    font-size: smaller;
+    font-weight: lighter;
+  }
+  .cor-section .content .cards .card .profil-container img:first-child {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0;
+  }
+  .cor-section .content .cards .card .profil-container img:last-child {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    right: 5px;
+    top: 50%;
   }
   .user-header .links i {
     font-size: 1rem !important;
