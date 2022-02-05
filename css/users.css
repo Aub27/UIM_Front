@@ -1,6 +1,8 @@
 .cor-section {
   grid-area: s;
   height: 100%;
+  background-image: url("../images/students_09.jpg");
+  background-size: cover;
 }
 
 .cor-section .user-container {
@@ -54,6 +56,7 @@
   height: 30%;
 }
 .cor-section .content .cards .card {
+  background-color: white;
   position: relative;
   padding: 1em;
   display: flex;
@@ -114,7 +117,7 @@
 }
 
 .cards .card:hover {
-  background-color: #222;
+  background-color: #222 !important;
   color: white;
 }
 
