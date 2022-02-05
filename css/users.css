@@ -1,0 +1,134 @@
+.cor-section {
+  grid-area: s;
+  height: 100%;
+}
+
+.cor-section .user-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "a a a c c c c c c c c c";
+}
+
+.cor-section aside {
+  grid-area: a;
+  padding: 1em;
+  background-color: #ddd;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  overflow: hidden;
+  border: 2px solid var(--clr-main-blue);
+  width: 80%;
+  opacity: 80%;
+  overflow: auto;
+  height: auto;
+}
+.cor-section aside a:not(:last-child) {
+  border-bottom: 2px solid var(--clr-main-blue);
+}
+.cor-section aside a {
+  padding: 1em;
+  transition: 0.3s;
+}
+
+.cor-section aside > a:hover {
+  padding-left: 1em;
+}
+
+.cor-section .flex-col {
+  gap: 1em;
+}
+
+.cor-section .content {
+  padding: 1em;
+  grid-area: c;
+  height: 100%;
+  overflow: auto;
+}
+.cor-section .content .cards {
+  grid-template-columns: repeat(3, 3fr);
+  gap: 0.5em;
+  height: 30%;
+}
+.cor-section .content .cards .card {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  box-shadow: 2px 2px 5px 1px #222;
+  border-radius: 1em;
+  border: 1px solid #332;
+  transition: 0.3s;
+}
+.cor-section .content .cards .card .profil-container img:first-child {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0;
+}
+.cor-section .content .cards .card .profil-container img:last-child {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+  right: -15px;
+  bottom: 0;
+}
+.cor-section .content .cards .card .profil-container {
+  position: relative;
+}
+.cor-section h4 {
+  line-height: 1rem;
+}
+
+.user-header a {
+  font-size: larger;
+}
+.user-header .flex > * {
+  flex-basis: 33%;
+}
+.user-header .flex {
+  justify-content: space-around;
+}
+
+.cards .card:hover {
+  background-color: #222;
+  color: white;
+}
+
+@media (max-width: 383px) {
+  .b-container {
+    grid-template-rows: 20% 70% 10%;
+  }
+  .cor-section .user-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "c";
+  }
+  .cor-section aside {
+    display: flex;
+    flex-direction: row !important;
+    font-size: smaller;
+    overflow: auto;
+    width: 100vw;
+    border-radius: unset;
+    border: unset;
+  }
+  .cor-section aside > a {
+    border: unset !important;
+    padding-block: 0.2em;
+  }
+  section {
+    overflow: auto;
+  }
+  .cor-section .content .cards {
+    grid-template-columns: 1fr;
+    gap: 1em;
+    height: 50%;
+  }
+}
