@@ -44,7 +44,7 @@
 }
 
 .cor-section aside a:hover {
-  padding-left: 1em;
+  padding-left: 1.5em;
 }
 
 .cor-section .flex-col {
@@ -110,7 +110,10 @@
 }
 .cor-section .content .cards .card .name-student {
   grid-column-start: 2;
+  grid-column: span 2;
+  width: 100%;
   grid-row-start: 1;
+
   place-self: center;
 }
 .cor-section .content .cards .card .profil-container img:first-child {
