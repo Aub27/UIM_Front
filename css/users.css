@@ -51,6 +51,7 @@
   height: 30%;
 }
 .cor-section .content .cards .card {
+  position: relative;
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -60,6 +61,22 @@
   border-radius: 1em;
   border: 1px solid #332;
   transition: 0.3s;
+}
+.cor-section .content .cards .card::after {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: forestgreen;
+  border-radius: 1em;
+  right: 5%;
+  top: 5%;
+}
+.status {
+  position: absolute;
+  top: 5%;
+  right: 12%;
+  font-size: small;
 }
 .cor-section .content .cards .card .profil-container img:first-child {
   width: 80px;
