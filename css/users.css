@@ -65,8 +65,9 @@
 .cor-section .content .cards .card {
   background-color: white;
   position: relative;
-  padding: 1em;
+  padding: 2em;
   display: grid;
+  height: 100%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "picture info";
   gap: 0.5em;
