@@ -2,7 +2,8 @@
   grid-area: s;
   height: 100%;
   background-image: url("../images/students_09.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .cor-section .user-container {
