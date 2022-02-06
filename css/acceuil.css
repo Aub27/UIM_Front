@@ -169,6 +169,7 @@ header .flex {
 /*Section */
 
 section {
+  height: 100%;
   width: 100%;
   grid-area: s;
 }

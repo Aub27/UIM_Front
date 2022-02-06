@@ -31,6 +31,8 @@
   opacity: 80%;
   overflow: auto;
   height: fit-content;
+  overscroll-behavior: contain;
+  scroll-snap-type: inline mandatory;
 }
 .cor-section aside .item:not(:last-child) {
   border-bottom: 2px solid var(--clr-main-blue);
@@ -38,6 +40,8 @@
 .cor-section aside .item {
   padding: 1em;
   width: 100%;
+  scroll-snap-align: start;
+  scroll-padding-inline: 1em;
 }
 .cor-section aside .item a {
   transition: 0.4s;
@@ -56,6 +60,7 @@
   grid-area: c;
   height: 100%;
   overflow: auto;
+  overscroll-behavior-inline: contain;
 }
 .cor-section .content .cards {
   grid-template-columns: repeat(3, 3fr);
@@ -107,13 +112,13 @@
   gap: 0.5em;
   grid-area: info;
   grid-row-start: 2;
+  grid-column: span 2;
 }
 .cor-section .content .cards .card .name-student {
   grid-column-start: 2;
   grid-column: span 2;
   width: 100%;
   grid-row-start: 1;
-
   place-self: center;
 }
 .cor-section .content .cards .card .profil-container img:first-child {
@@ -172,6 +177,7 @@
     font-size: smaller;
     text-align: center;
     overflow: auto;
+    overscroll-behavior-inline: contain;
     width: 100vw;
     border-radius: unset;
     border: unset;
